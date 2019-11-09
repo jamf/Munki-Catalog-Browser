@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
+                        <items>
+                            <menuItem title="Munki Catalog Browser" id="1Xt-HY-uBw">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Munki Catalog Browser" systemMenu="apple" id="uQy-DD-JDr">
+                                    <items>
+                                        <menuItem title="About Munki Catalog Browser" id="5kV-Vb-QxS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="VOq-y0-SEH"/>
+                                        <menuItem title="Preferences…" keyEquivalent="," id="BOF-NM-1cW"/>
+                                        <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
+                                        <menuItem title="Services" id="NMo-om-nkz">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
+                                        <menuItem title="Hide Munki Catalog Browser" keyEquivalent="h" id="Olw-nP-bQN">
+                                            <connections>
+                                                <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Hide Others" keyEquivalent="h" id="Vdr-fp-XzO">
+                                            <modifierMask key="keyEquivalentModifierMask" option="YES" command="YES"/>
+                                            <connections>
+                                                <action selector="hideOtherApplications:" target="Ady-hI-5gd" id="VT4-aY-XCT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Show All" id="Kd2-mp-pUS">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="unhideAllApplications:" target="Ady-hI-5gd" id="Dhg-Le-xox"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
+                                        <menuItem title="Quit JamJar Catalogue" keyEquivalent="q" id="4sb-4s-VLi">
+                                            <connections>
+                                                <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Window" id="aUF-d1-5bR">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Window" systemMenu="window" id="Td7-aD-5lo">
+                                    <items>
+                                        <menuItem title="Refresh" keyEquivalent="r" id="XEB-Yl-3lM">
+                                            <connections>
+                                                <action selector="refresh:" target="Ady-hI-5gd" id="rOP-hx-kB5"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Export" keyEquivalent="e" id="k88-5P-jWu">
+                                            <connections>
+                                                <action selector="export:" target="Ady-hI-5gd" id="Nxx-Ie-wmR"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                            <menuItem title="Help" state="on" id="wpr-3q-Mcd">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
+                                    <items>
+                                        <menuItem title="Munki Catalog Browser Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                            <connections>
+                                                <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Munki_Catalog_Browser" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Munki Catalog Browser" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" topStrut="YES"/>
+                        <rect key="contentRect" x="20" y="20" width="800" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="800" height="270"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Munki_Catalog_Browser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="873" height="556"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XQ-N4-yL2">
+                                <rect key="frame" x="0.0" y="22" width="873" height="512"/>
+                                <clipView key="contentView" copiesOnScroll="NO" id="si7-3k-yT9">
+                                    <rect key="frame" x="1" y="1" width="871" height="510"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="18" rowSizeStyle="automatic" viewBased="YES" id="5Wj-i5-LgG">
+                                            <rect key="frame" x="0.0" y="0.0" width="871" height="510"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <size key="intercellSpacing" width="3" height="2"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <tableColumns>
+                                                <tableColumn editable="NO" width="868" minWidth="40" maxWidth="1000" id="zBA-Af-LZe">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border">
+                                                        <font key="font" metaFont="smallSystem"/>
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="naY-bR-Xwx">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <tableCellView identifier="myCell" id="Rjv-40-RCi" customClass="AppCell" customModule="Munki_Catalog_Browser" customModuleProvider="target">
+                                                            <rect key="frame" x="1" y="1" width="868" height="17"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="54R-nJ-umA">
+                                                                    <rect key="frame" x="4" y="0.0" width="17" height="17"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="17" id="9oX-I8-qmm"/>
+                                                                        <constraint firstAttribute="height" constant="17" id="Axt-vh-b18"/>
+                                                                    </constraints>
+                                                                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="tgo-cX-Twc"/>
+                                                                </imageView>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-UH-LnY">
+                                                                    <rect key="frame" x="48" y="0.0" width="37" height="17"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="17" id="w7d-PH-rLk"/>
+                                                                    </constraints>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="d4i-1W-Gml">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ibq-0j-HM5">
+                                                                    <rect key="frame" x="358" y="1" width="37" height="16"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="WUe-dw-ogo">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uya-WV-tsz">
+                                                                    <rect key="frame" x="618" y="1" width="37" height="16"/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="zQ5-hV-TNL">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EMh-Y9-L5P">
+                                                                    <rect key="frame" x="748" y="1" width="37" height="16"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="mi5-Uu-iNC">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Uya-WV-tsz" firstAttribute="leading" secondItem="Rjv-40-RCi" secondAttribute="leading" constant="620" id="3p3-xE-2je"/>
+                                                                <constraint firstItem="EMh-Y9-L5P" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Uya-WV-tsz" secondAttribute="trailing" constant="8" symbolic="YES" id="3ps-bQ-Lhu"/>
+                                                                <constraint firstItem="54R-nJ-umA" firstAttribute="leading" secondItem="Rjv-40-RCi" secondAttribute="leading" constant="4" id="688-Jh-hgQ"/>
+                                                                <constraint firstItem="ibq-0j-HM5" firstAttribute="centerY" secondItem="Rjv-40-RCi" secondAttribute="centerY" id="9u9-BL-Prh"/>
+                                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="EMh-Y9-L5P" secondAttribute="trailing" constant="20" symbolic="YES" id="Qq3-fw-oXB"/>
+                                                                <constraint firstItem="54R-nJ-umA" firstAttribute="centerY" secondItem="Rjv-40-RCi" secondAttribute="centerY" id="V7M-1g-RIP"/>
+                                                                <constraint firstItem="Xce-UH-LnY" firstAttribute="leading" secondItem="54R-nJ-umA" secondAttribute="trailing" constant="29" id="d0d-nF-xF0"/>
+                                                                <constraint firstItem="ibq-0j-HM5" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Xce-UH-LnY" secondAttribute="trailing" constant="8" symbolic="YES" id="j2T-pk-g1d"/>
+                                                                <constraint firstItem="EMh-Y9-L5P" firstAttribute="leading" secondItem="Rjv-40-RCi" secondAttribute="leading" constant="750" id="koA-Sj-6RP"/>
+                                                                <constraint firstItem="Uya-WV-tsz" firstAttribute="centerY" secondItem="Rjv-40-RCi" secondAttribute="centerY" id="mAj-Bl-g5u"/>
+                                                                <constraint firstItem="ibq-0j-HM5" firstAttribute="leading" secondItem="Rjv-40-RCi" secondAttribute="leading" constant="360" id="mvG-gJ-Qxc"/>
+                                                                <constraint firstItem="Uya-WV-tsz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ibq-0j-HM5" secondAttribute="trailing" constant="8" symbolic="YES" id="rdj-2h-Wor"/>
+                                                                <constraint firstItem="EMh-Y9-L5P" firstAttribute="centerY" secondItem="Rjv-40-RCi" secondAttribute="centerY" id="vwg-h7-VkY"/>
+                                                                <constraint firstItem="Xce-UH-LnY" firstAttribute="centerY" secondItem="Rjv-40-RCi" secondAttribute="centerY" id="xGt-Kp-8vE"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="appIcon" destination="54R-nJ-umA" id="G3G-de-q3X"/>
+                                                                <outlet property="appName" destination="Xce-UH-LnY" id="GMC-BT-UUm"/>
+                                                                <outlet property="appVersion" destination="Uya-WV-tsz" id="4h3-8Y-4Y2"/>
+                                                                <outlet property="munkiCatalog" destination="EMh-Y9-L5P" id="u5F-tx-mTK"/>
+                                                                <outlet property="munkiName" destination="ibq-0j-HM5" id="12I-J7-NfI"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                        </tableView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="09T-cT-VPI">
+                                    <rect key="frame" x="1" y="119" width="223" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="EDh-do-ucL">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKJ-6e-LVR">
+                                <rect key="frame" x="0.0" y="534" width="850" height="22"/>
+                                <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" usesSingleLineMode="YES" bezelStyle="round" id="AsU-bG-gGk">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </searchFieldCell>
+                            </searchField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6XQ-N4-yL2" firstAttribute="top" secondItem="BKJ-6e-LVR" secondAttribute="bottom" id="A2w-ty-Cf6"/>
+                            <constraint firstAttribute="bottom" secondItem="6XQ-N4-yL2" secondAttribute="bottom" constant="22" id="Fd9-rj-Lm9"/>
+                            <constraint firstAttribute="trailing" secondItem="BKJ-6e-LVR" secondAttribute="trailing" constant="23" id="hq8-b7-8dW"/>
+                            <constraint firstItem="6XQ-N4-yL2" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="lT9-I1-x8H"/>
+                            <constraint firstItem="BKJ-6e-LVR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="mrD-Ub-Aaa"/>
+                            <constraint firstItem="BKJ-6e-LVR" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="oJW-1N-rLG"/>
+                            <constraint firstAttribute="trailing" secondItem="6XQ-N4-yL2" secondAttribute="trailing" id="qyt-3b-Edk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myTableView" destination="5Wj-i5-LgG" id="chN-C1-R76"/>
+                        <outlet property="searchField" destination="BKJ-6e-LVR" id="Ofw-Bs-PiI"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154.5" y="798"/>
+        </scene>
+    </scenes>
+</document>
