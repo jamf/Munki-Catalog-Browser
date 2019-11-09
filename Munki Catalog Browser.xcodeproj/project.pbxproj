@@ -15,6 +15,8 @@
 		798516F91F7AB0D400EF4C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798516F71F7AB0D400EF4C1D /* Main.storyboard */; };
 		7C21E6FF23770F7A001F257D /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C21E6FD23770F61001F257D /* LetsMove.framework */; };
 		7C21E70023770F7A001F257D /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C21E6FD23770F61001F257D /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C21E70523770FEE001F257D /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C21E70323770FEA001F257D /* Sparkle.framework */; };
+		7C21E70623770FEE001F257D /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C21E70323770FEA001F257D /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				7C21E70023770F7A001F257D /* LetsMove.framework in Embed Frameworks */,
+				7C21E70623770FEE001F257D /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,6 +53,7 @@
 		798516F81F7AB0D400EF4C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		798516FA1F7AB0D400EF4C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C21E6FD23770F61001F257D /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LetsMove.framework; path = "../../Jamf-Switcher/Frameworks/LetsMove.framework"; sourceTree = "<group>"; };
+		7C21E70323770FEA001F257D /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C21E6FF23770F7A001F257D /* LetsMove.framework in Frameworks */,
+				7C21E70523770FEE001F257D /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +103,7 @@
 		7C9F08562370B57B0092AAFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C21E70323770FEA001F257D /* Sparkle.framework */,
 				7C21E6FD23770F61001F257D /* LetsMove.framework */,
 			);
 			path = Frameworks;
