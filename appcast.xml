@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
-        <title>Munki Catalog Browsers's Changelog</title>
+        <title>Munki Catalog Browsers Changelog</title>
         <link>https://raw.githubusercontent.com/dataJAR/Munki-Catalog-Browser/appcast/appcast.xml</link>
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
@@ -12,7 +12,7 @@
             <h2>Release!</h2>
         ]]></description>
             <pubDate>Saturday, 9 November 2019 11:30 +0000</pubDate>
-            <enclosure url="https://github.com/dataJAR/Jamf-Switcher/releases/download/1.0/Munki.Catalog.Browser.zip"
+            <enclosure url="https://github.com/dataJAR/Munki-Catalog-Browser/releases/download/1.0/Munki.Catalog.Browser.zip"
             sparkle:version="48"
             length="5823531" 
             type="application/octet-stream" 
