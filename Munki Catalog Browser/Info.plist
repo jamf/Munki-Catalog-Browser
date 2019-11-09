@@ -19,7 +19,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string></string>
+	<string>2</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSHumanReadableCopyright</key>
@@ -29,7 +29,7 @@
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>SUFeedURL</key>
-	<string>https://github.com/dataJAR/Munki-Catalog-Browser/blob/appcast/appcast.xml</string>
+	<string>https://raw.githubusercontent.com/dataJAR/Munki-Catalog-Browser/appcast/appcast.xml</string>
 	<key>SUPublicEDKey</key>
 	<string>5nvsscpeHUavkTt0DWR9ad+8E7gZxyNe6/Q7L4R1N+o=</string>
 </dict>

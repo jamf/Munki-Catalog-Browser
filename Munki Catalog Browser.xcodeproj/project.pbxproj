@@ -17,6 +17,7 @@
 		7C21E70023770F7A001F257D /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C21E6FD23770F61001F257D /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		7C21E70523770FEE001F257D /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C21E70323770FEA001F257D /* Sparkle.framework */; };
 		7C21E70623770FEE001F257D /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C21E70323770FEA001F257D /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7C4308CE2377169400A884C9 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4308CD2377169400A884C9 /* LetsMove.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -54,6 +55,7 @@
 		798516FA1F7AB0D400EF4C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C21E6FD23770F61001F257D /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LetsMove.framework; path = "../../Jamf-Switcher/Frameworks/LetsMove.framework"; sourceTree = "<group>"; };
 		7C21E70323770FEA001F257D /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		7C4308CD2377169400A884C9 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			files = (
 				7C21E6FF23770F7A001F257D /* LetsMove.framework in Frameworks */,
 				7C21E70523770FEE001F257D /* Sparkle.framework in Frameworks */,
+				7C4308CE2377169400A884C9 /* LetsMove.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +106,7 @@
 		7C9F08562370B57B0092AAFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7C4308CD2377169400A884C9 /* LetsMove.framework */,
 				7C21E70323770FEA001F257D /* Sparkle.framework */,
 				7C21E6FD23770F61001F257D /* LetsMove.framework */,
 			);
@@ -199,7 +203,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/bash\n#\n# https://crunchybagel.com/auto-incrementing-build-numbers-in-xcode/\n# \n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nif [ -z \"${buildNumber}\" ];\nthen\n    buildNumber=0\nfi\nbuildNumber=$(\"${buildNumber}\" + 1)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+			shellScript = "#!/bin/bash\n#\n# https://crunchybagel.com/auto-incrementing-build-numbers-in-xcode/\n# \n\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
