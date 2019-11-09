@@ -6,13 +6,13 @@
 //
 
 import Cocoa
-//import LetsMove
+import LetsMove
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        //PFMoveToApplicationsFolderIfNecessary()
+        PFMoveToApplicationsFolderIfNecessary()
     }
 
     func applicationDidBecomeActive(_ notification: Notification) {
