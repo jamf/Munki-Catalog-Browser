@@ -15,6 +15,6 @@ Munki Catalog Browser is an app which allows for easy browsing of items in your 
 <p align="center"><img src="/../assets/images/Screenshot%202019-11-09%2014.31.49.png" width="512"></p>
 4. Choose to check for updates automatically or not:
 <p align="center"><img src="/../assets/images/Screenshot%202019-11-09%2013.59.20.png" width="512"></p>
-3. Munki Catalog Browser should now load showing a window listing details from the Munki catalog files locally within your Managed Installs directory.
-4. You can search within the app.
+3. Munki Catalog Browser should now load showing a window listing details from the Munki catalog files locally within your Managed Installs directory.<br/>
+4. You can search within the app.<br/>
 5. Pressing CMD+R will refresh the list re-reading in your catalogs, CMD+E will export to CSV, with this export exporting the matches from any entered search criteria.
