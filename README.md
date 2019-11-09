@@ -5,4 +5,6 @@ Licensed under the Apache License, Version 2.0 (the "License"); you may not use 
 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
 # Munki-Catalog-Browser
+<p align="center"><img src="/../assets/images/MunkiCatalogBrowserx1024.png" width="256" height="256"></p>
+
 Munki Catalog Browser is an app which allows for easy browsing of items in your devices Munki catalogs as well as exporting to CSV
