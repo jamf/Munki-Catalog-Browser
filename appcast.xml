@@ -13,10 +13,10 @@
         ]]></description>
             <pubDate>Saturday, 9 November 2019 11:30 +0000</pubDate>
             <enclosure url="https://github.com/dataJAR/Munki-Catalog-Browser/releases/download/1.0/Munki.Catalog.Browser.zip"
-            sparkle:version="48"
-            length="5823531" 
+            sparkle:version="2"
+            length="6061347" 
             type="application/octet-stream" 
-            sparkle:edSignature="f4bO3R598eR8cfGkc5B4G4oLG7IxkSyp1flx80wHr1CA6vtW0Kcv5lfhv+/E3DhxMcH4XG207jTUPPbk4hkrCA==" />
+            sparkle:edSignature="FEwNFWTC6PFuXxJ2+N3bPqk/yIrca7NXyio9BRZmR0eQO3usAXM6mIDJ+0afJsR3T+2d63xzrNXYcGRxPxgtBA==" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
     </channel>
