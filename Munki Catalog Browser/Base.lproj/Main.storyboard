@@ -247,7 +247,7 @@
                                 </scroller>
                             </scrollView>
                             <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKJ-6e-LVR">
-                                <rect key="frame" x="0.0" y="534" width="850" height="22"/>
+                                <rect key="frame" x="0.0" y="534" width="873" height="22"/>
                                 <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" usesSingleLineMode="YES" bezelStyle="round" id="AsU-bG-gGk">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -258,7 +258,7 @@
                         <constraints>
                             <constraint firstItem="6XQ-N4-yL2" firstAttribute="top" secondItem="BKJ-6e-LVR" secondAttribute="bottom" id="A2w-ty-Cf6"/>
                             <constraint firstAttribute="bottom" secondItem="6XQ-N4-yL2" secondAttribute="bottom" constant="22" id="Fd9-rj-Lm9"/>
-                            <constraint firstAttribute="trailing" secondItem="BKJ-6e-LVR" secondAttribute="trailing" constant="23" id="hq8-b7-8dW"/>
+                            <constraint firstAttribute="trailing" secondItem="BKJ-6e-LVR" secondAttribute="trailing" id="hq8-b7-8dW"/>
                             <constraint firstItem="6XQ-N4-yL2" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="lT9-I1-x8H"/>
                             <constraint firstItem="BKJ-6e-LVR" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="mrD-Ub-Aaa"/>
                             <constraint firstItem="BKJ-6e-LVR" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="oJW-1N-rLG"/>
