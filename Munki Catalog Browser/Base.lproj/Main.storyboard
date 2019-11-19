@@ -133,7 +133,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="873" height="556"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XQ-N4-yL2">
+                            <scrollView canDrawConcurrently="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XQ-N4-yL2">
                                 <rect key="frame" x="0.0" y="22" width="873" height="512"/>
                                 <clipView key="contentView" copiesOnScroll="NO" id="si7-3k-yT9">
                                     <rect key="frame" x="1" y="1" width="871" height="510"/>
