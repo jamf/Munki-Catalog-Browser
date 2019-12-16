@@ -74,7 +74,7 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        NSApplication.shared.windows.first?.styleMask = .titled
+        //NSApplication.shared.windows.first?.styleMask = .titled
         myTableView.delegate = self
         myTableView.dataSource = self
         searchField.delegate = self
