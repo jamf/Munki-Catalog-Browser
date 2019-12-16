@@ -30,19 +30,23 @@ class ViewController: NSViewController {
     func readCatalogs() {
         appsFound = [MunkiApp]()
         let fm = FileManager.default
+        let defaultInstallDir = "/Library/Managed Installs"
+        let munkiDefaults = UserDefaults(suiteName: "ManagedInstalls")
+        let foundInstallDir = munkiDefaults?.object(forKey: "ManagedInstallDirs")
+        let managedInstallDir = foundInstallDir ?? defaultInstallDir
+        let munkiCatalogsDir = URL(fileURLWithPath: "\(managedInstallDir)\("/catalogs")")
         do {
-            let defaultInstallDir = "/Library/Managed Installs"
-            let munkiDefaults = UserDefaults(suiteName: "ManagedInstalls")
-            let foundInstallDir = munkiDefaults?.object(forKey: "ManagedInstallDirs")
-            let managedInstallDir = foundInstallDir ?? defaultInstallDir
-            let munkiCatalogsDir = URL(fileURLWithPath: "\(managedInstallDir)\("/catalogs")")
             let catalogsDir = try fm.contentsOfDirectory(at: munkiCatalogsDir, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
             for foundCatalog in catalogsDir {
                 print("Found \(foundCatalog)")
                 lookupApps(munkiCatalogFile: foundCatalog)
             }
         } catch {
-            // failed to read directory – bad permissions, perhaps?
+            let alert = NSAlert()
+            alert.messageText = "Error reading catalogs"
+            alert.informativeText = "Cannot read catalogs located at: \(managedInstallDir)/catalogs \n\nPlease check the path and your account permissions."
+            alert.alertStyle = NSAlert.Style.critical
+            alert.runModal()
         }
     }
 
@@ -74,7 +78,6 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        //NSApplication.shared.windows.first?.styleMask = .titled
         myTableView.delegate = self
         myTableView.dataSource = self
         searchField.delegate = self
