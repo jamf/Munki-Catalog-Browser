@@ -32,7 +32,7 @@ class ViewController: NSViewController {
         let fm = FileManager.default
         let defaultInstallDir = "/Library/Managed Installs"
         let munkiDefaults = UserDefaults(suiteName: "ManagedInstalls")
-        let foundInstallDir = munkiDefaults?.object(forKey: "ManagedInstallDirs")
+        let foundInstallDir = munkiDefaults?.object(forKey: "ManagedInstallDir")
         let managedInstallDir = foundInstallDir ?? defaultInstallDir
         let munkiCatalogsDir = URL(fileURLWithPath: "\(managedInstallDir)\("/catalogs")")
         do {
