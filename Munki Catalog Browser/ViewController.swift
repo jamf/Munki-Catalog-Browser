@@ -32,8 +32,10 @@ class ViewController: NSViewController {
         let fm = FileManager.default
         let defaultInstallDir = "/Library/Managed Installs"
         let munkiDefaults = UserDefaults(suiteName: "ManagedInstalls")
-        let foundInstallDir = munkiDefaults?.object(forKey: "ManagedInstallDir")
-        let managedInstallDir = foundInstallDir ?? defaultInstallDir
+        var managedInstallDir = "\(munkiDefaults?.object(forKey: "ManagedInstallDir") ?? defaultInstallDir)"
+        if !managedInstallDir.hasSuffix("/") {
+            managedInstallDir = managedInstallDir + "/"
+        }
         let munkiCatalogsDir = URL(fileURLWithPath: "\(managedInstallDir)\("/catalogs")")
         do {
             let catalogsDir = try fm.contentsOfDirectory(at: munkiCatalogsDir, includingPropertiesForKeys: nil, options: .skipsHiddenFiles)
@@ -44,7 +46,7 @@ class ViewController: NSViewController {
         } catch {
             let alert = NSAlert()
             alert.messageText = "Error reading catalogs"
-            alert.informativeText = "Cannot read catalogs located at: \(managedInstallDir)/catalogs \n\nPlease check the path and your account permissions."
+            alert.informativeText = "Cannot read catalogs located at: \(managedInstallDir)catalogs \n\nPlease check the path and your account permissions."
             alert.alertStyle = NSAlert.Style.critical
             alert.runModal()
         }
