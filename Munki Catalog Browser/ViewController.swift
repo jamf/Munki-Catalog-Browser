@@ -188,7 +188,7 @@ extension ViewController: NSSearchFieldDelegate {
     func controlTextDidChange(_ obj: Notification) {
         if let searchField = obj.object as? NSTextField {
             if searchField.stringValue.isEmpty {
-                filteredAppsFound = appsFound.filter { $0.name?.lowercased().contains(searchField.stringValue.lowercased()) ?? false }
+                filteredAppsFound = appsFound
             } else {
                 filteredAppsFound = appsFound.filter { ($0.name?.lowercased().contains(searchField.stringValue.lowercased()))!}
             }
