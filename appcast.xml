@@ -8,6 +8,11 @@
         <item>
         <title>Version 1.0</title>
         <description><![CDATA[
+            <h2>1.1</h2>
+            <li>Entering text in search field causes app to crash - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/1" class="issue-link">#1</a></li>
+            <li>Main window sizing is unpredictable and not easily modifiable - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/3" class="issue-link">#3</a></li>
+            <li>App not usable by non-admin users due to default catalog permissions - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/4" class="issue-link">#4</a></li>
+            <li>Search bar does not span whole window - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/5" class="issue-link">#5</a></li>
             <h2>1.0 (build 40)</h2>
             <h2>Release!</h2>
         ]]></description>
