@@ -6,7 +6,7 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
-        <title>Version 1.0</title>
+        <title>Version 1.1</title>
         <description><![CDATA[
             <h2>1.1</h2>
             <li>Entering text in search field causes app to crash - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/1" class="issue-link">#1</a></li>
