@@ -18,7 +18,7 @@
         ]]></description>
             <pubDate>Wednesday, 25 March 2020 15:00 +0000</pubDate>
             <enclosure url="https://github.com/dataJAR/Munki-Catalog-Browser/releases/download/1.1/Munki.Catalog.Browser.zip"
-            sparkle:version="2"
+            sparkle:version="54"
             length="6245886" 
             type="application/octet-stream" 
             sparkle:edSignature="YeLtRQ4MnPjl5fDuL8OYVn1W/Tfzl/eFwIJNe6w+EdoFkDmZ35maeG/QbiXvhqvNiGe2JlbDJR/PPGLod4FVBg==" />
