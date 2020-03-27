@@ -15,6 +15,6 @@ Munki Catalog Browser is an app which allows a local macOS admin to easily list 
 <p align="center"><img src="/../assets/images/Screenshot%202019-11-09%2015.15.55.png" width="512"></p>
 4. Choose to check for updates automatically or not:
 <p align="center"><img src="/../assets/images/Screenshot%202019-11-09%2015.53.11.png" width="512"></p>
-3. Munki Catalog Browser should now load showing a window listing details from the Munki catalog files locally within your Managed Installs directory.<p align="center"><img src="/../assets/images/Screenshot%202019-11-09%2014.31.49.png" width="512"></p>
+3. Munki Catalog Browser should now load showing a window listing details from the Munki catalog files locally within your Managed Installs directory. An error message will be shown if the user running Munki Catalog Browser is not a member of the Administrators group or otherwise cannot read the Munki catalogs.<p align="center"><img src="/../assets/images/Screenshot%202019-11-09%2014.31.49.png" width="512"></p>
 4. Typing in the search bar will search across the catalog content, pressing CMD+R will refresh the list re-reading in your catalogs, CMD+E will export to CSV, with this export exporting the matches from any entered search criteria.
 <p align="center"><img src="/../assets/images/Screenshot%202019-11-09%2013.59.20.png" width="512"></p>
