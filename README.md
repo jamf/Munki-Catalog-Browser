@@ -7,7 +7,7 @@ Unless required by applicable law or agreed to in writing, software distributed 
 # Munki-Catalog-Browser
 <p align="center"><img src="/../assets/images/MunkiCatalogBrowserx1024.png" width="256" height="256"></p>
 
-Munki Catalog Browser is an app which allows for easy browsing of items in your devices Munki catalogs as well as exporting to CSV
+Munki Catalog Browser is an app which allows a local macOS admin to easily list items in your devices Munki catalogs as well as exporting to CSV.
 
 # Usage
 1. On a macOS device which has Munki installed & logged in as a member of the Administrators group, download the [latest version of Munki Catalog Browser](https://github.com/dataJAR/Munki-Catalog-Browser/releases/latest)
