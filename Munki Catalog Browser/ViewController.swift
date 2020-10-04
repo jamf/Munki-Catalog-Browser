@@ -187,13 +187,13 @@ extension ViewController: NSTableViewDelegate {
                 newLine = newLine + display_name
             }
             if let munkiName = someApp.name {
-                newLine = newLine + ", " + munkiName
+                newLine = newLine + "," + munkiName
             }
             if let version = someApp.version {
-                newLine = newLine + ", " + version
+                newLine = newLine + "," + version
             }
             if let munkiCatalog = someApp.catalog {
-                newLine = newLine + ", " + munkiCatalog + "\n"
+                newLine = newLine + "," + munkiCatalog + "\n"
             }
             csvText.append(newLine)
         }
