@@ -179,7 +179,10 @@ extension ViewController: NSTableViewDelegate {
     }
 
     @IBAction func export(_ sender: Any) {
-        let fileName = "Munki Catalog Browser Export"
+        let date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "yyyy-MM-dd-HH-mm-ss"
+        let fileName = "Munki Catalog Browser Export - " + format.string(from: date)
         var csvText = "Display Name, Munki Name, Version, Catalog\n"
         for someApp in filteredAppsFound {
             var newLine = ""
