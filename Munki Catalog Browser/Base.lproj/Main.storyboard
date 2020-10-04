@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16096"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17156"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -60,6 +60,37 @@
                                         </menuItem>
                                     </items>
                                 </menu>
+                            </menuItem>
+                            <menuItem title="Edit" enabled="NO" id="meE-uL-s41">
+                                <modifierMask key="keyEquivalentModifierMask"/>
+                                <menu key="submenu" title="Edit" id="sag-4Z-ezG">
+                                    <items>
+                                        <menuItem title="Undo" enabled="NO" keyEquivalent="z" id="Neq-vh-ExB">
+                                            <connections>
+                                                <action selector="undo:" target="Ady-hI-5gd" id="DaM-nJ-pv5"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Redo" enabled="NO" keyEquivalent="Z" id="0pg-sF-qi6">
+                                            <connections>
+                                                <action selector="redo:" target="Ady-hI-5gd" id="GK7-H7-GZs"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem isSeparatorItem="YES" id="Dfp-Ir-LmC"/>
+                                        <menuItem title="Copy" enabled="NO" keyEquivalent="c" id="HM7-4O-XBR">
+                                            <connections>
+                                                <action selector="copy:" target="Ady-hI-5gd" id="CPo-kN-zTf"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Paste" enabled="NO" keyEquivalent="v" id="NOh-Yx-dri">
+                                            <connections>
+                                                <action selector="paste:" target="Ady-hI-5gd" id="JVf-PC-8qJ"/>
+                                            </connections>
+                                        </menuItem>
+                                    </items>
+                                </menu>
+                                <connections>
+                                    <action selector="copy:" target="Ady-hI-5gd" id="F8F-q5-t5k"/>
+                                </connections>
                             </menuItem>
                             <menuItem title="Window" id="aUF-d1-5bR">
                                 <modifierMask key="keyEquivalentModifierMask"/>
@@ -133,7 +164,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="873" height="556"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView canDrawConcurrently="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XQ-N4-yL2">
+                            <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XQ-N4-yL2">
                                 <rect key="frame" x="0.0" y="22" width="873" height="512"/>
                                 <clipView key="contentView" copiesOnScroll="NO" id="si7-3k-yT9">
                                     <rect key="frame" x="1" y="1" width="871" height="510"/>

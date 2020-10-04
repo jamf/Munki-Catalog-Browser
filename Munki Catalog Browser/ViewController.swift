@@ -27,6 +27,19 @@ class ViewController: NSViewController {
         readCatalogs()
     }
 
+    @objc func copy(_ sender: AnyObject)  {
+        if filteredAppsFound.count > 0 {
+            let rowSelected = myTableView.selectedRow
+            if rowSelected >= 0 {
+                if let munkiName = filteredAppsFound[rowSelected].name {
+                    let pasteBoard = NSPasteboard.general
+                    pasteBoard.clearContents()
+                    pasteBoard.setString(munkiName, forType: .string)
+                }
+            }
+        }
+    }
+
     func readCatalogs() {
         appsFound = [MunkiApp]()
         let fm = FileManager.default
