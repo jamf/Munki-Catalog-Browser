@@ -6,22 +6,28 @@
         <description>Most recent changes with links to updates.</description>
         <language>en</language>
         <item>
-        <title>Version 1.1</title>
+        <title>Version 1.2</title>
         <description><![CDATA[
+            <h2>1.2 (build 67)</h2>
+            <li><a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/10" class="issue-link">#10</a> - Pressing CMD+C when a row is highlighted copies the Munki Name column value for that row</li>
+            <li><a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/11" class="issue-link">#11</a>Leading spaces no longer present in the CSV output</li>
+            <li><a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/12" class="issue-link">#12</a> CSV output now appended with date and time, for example: Munki Catalog Browser Export - 2020-10-12-03-40-23.csv</li>
+            </br>
+            <li>This release has also been tested under Big Sur b9, with no issues found.</li>
             <h2>1.1 (build 56)</h2>
             <li>Entering text in search field causes app to crash - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/1" class="issue-link">#1</a></li>
             <li>Main window sizing is unpredictable and not easily modifiable - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/3" class="issue-link">#3</a></li>
             <li>App not usable by non-admin users due to default catalog permissions - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/4" class="issue-link">#4</a></li>
-            <li>Search bar does not span whole window - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/5" class="issue-link">#5</a></li>
+            <li>Search bar does not span whole window - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/5" class="issue-link">#5</a></li
             <h2>1.0 (build 40)</h2>
-            <h2>Release!</h2>
-        ]]></description>
-            <pubDate>Wednesday, 25 March 2020 15:00 +0000</pubDate>
-            <enclosure url="https://github.com/dataJAR/Munki-Catalog-Browser/releases/download/1.1/Munki.Catalog.Browser.zip"
-            sparkle:version="56"
-            length="6074479" 
+            <h2>Release!</h2>]]>
+            </description>
+            <pubDate>Monday, 12 October 2020 12:00 +0000</pubDate>
+            <enclosure url="https://github.com/dataJAR/Munki-Catalog-Browser/releases/download/1.2/Munki.Catalog.Browser.zip"
+            sparkle:version="67"
+            length="6220395" 
             type="application/octet-stream" 
-            sparkle:edSignature="dBSLP6ySo1QcORZ6OcuLeN6erekB+Wvi+lSD4iyDzXe6q4GWOA9zVA72ISmz1iVdam8Ckw6CImMMWlXtkWerBA==" />
+            sparkle:edSignature="xrYGTNY28sblrgD+RelfU9QBN+7qKhgIxhX7WwoCWUv3z/4g7hdOQ+SV6aMXaOIACnyMktU0ejZ86Lfu6OjiAg==" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
     </channel>
