@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,10 +13,10 @@
 		798516F41F7AB0D400EF4C1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798516F31F7AB0D400EF4C1D /* ViewController.swift */; };
 		798516F61F7AB0D400EF4C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798516F51F7AB0D400EF4C1D /* Assets.xcassets */; };
 		798516F91F7AB0D400EF4C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798516F71F7AB0D400EF4C1D /* Main.storyboard */; };
-		7C21E70523770FEE001F257D /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C21E70323770FEA001F257D /* Sparkle.framework */; };
-		7C21E70623770FEE001F257D /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C21E70323770FEA001F257D /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B5C9B51A252B5B2400D1BBE8 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4308CD2377169400A884C9 /* LetsMove.framework */; };
-		B5C9B51B252B5B2400D1BBE8 /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4308CD2377169400A884C9 /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B51E89352565339A00F6B621 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51E89332565339600F6B621 /* LetsMove.framework */; };
+		B51E89362565339A00F6B621 /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B51E89332565339600F6B621 /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B51E8939256533A900F6B621 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51E8937256533A700F6B621 /* Sparkle.framework */; };
+		B51E893A256533A900F6B621 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B51E8937256533A700F6B621 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +26,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7C21E70623770FEE001F257D /* Sparkle.framework in Embed Frameworks */,
-				B5C9B51B252B5B2400D1BBE8 /* LetsMove.framework in Embed Frameworks */,
+				B51E89362565339A00F6B621 /* LetsMove.framework in Embed Frameworks */,
+				B51E893A256533A900F6B621 /* Sparkle.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,8 +52,8 @@
 		798516F51F7AB0D400EF4C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		798516F81F7AB0D400EF4C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		798516FA1F7AB0D400EF4C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7C21E70323770FEA001F257D /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
-		7C4308CD2377169400A884C9 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
+		B51E89332565339600F6B621 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
+		B51E8937256533A700F6B621 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C21E70523770FEE001F257D /* Sparkle.framework in Frameworks */,
-				B5C9B51A252B5B2400D1BBE8 /* LetsMove.framework in Frameworks */,
+				B51E89352565339A00F6B621 /* LetsMove.framework in Frameworks */,
+				B51E8939256533A900F6B621 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,8 +103,8 @@
 		7C9F08562370B57B0092AAFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7C4308CD2377169400A884C9 /* LetsMove.framework */,
-				7C21E70323770FEA001F257D /* Sparkle.framework */,
+				B51E8937256533A700F6B621 /* Sparkle.framework */,
+				B51E89332565339600F6B621 /* LetsMove.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 				};
 			};
 			buildConfigurationList = 798516E91F7AB0D400EF4C1D /* Build configuration list for PBXProject "Munki Catalog Browser" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -358,7 +358,7 @@
 				);
 				INFOPLIST_FILE = "Munki Catalog Browser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dataJAR.MunkiCatalogBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -382,7 +382,7 @@
 				);
 				INFOPLIST_FILE = "Munki Catalog Browser/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dataJAR.MunkiCatalogBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

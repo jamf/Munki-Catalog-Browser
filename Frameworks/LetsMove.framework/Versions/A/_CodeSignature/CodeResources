@@ -6,7 +6,7 @@
 	<dict>
 		<key>Resources/Info.plist</key>
 		<data>
-		rh8QO8xDV5u+ghGf8hFfB7N4eLQ=
+		whr9ZBQ/3ziSIhXH9wOT472t8WI=
 		</data>
 		<key>Resources/ca.lproj/MoveApplication.strings</key>
 		<dict>
@@ -40,6 +40,15 @@
 			<key>hash</key>
 			<data>
 			GqP2NupuAqmyJYwzEvAIDPzf5yM=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/el.lproj/MoveApplication.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ZzzR7JHANnt9wRfFD31FrB1EHg=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -206,6 +215,15 @@
 			<key>optional</key>
 			<true/>
 		</dict>
+		<key>Resources/vi-VN.lproj/MoveApplication.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EU2s2LzXXAdt999ULymXzYCONaw=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
 		<key>Resources/zh_CN.lproj/MoveApplication.strings</key>
 		<dict>
 			<key>hash</key>
@@ -242,11 +260,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			HAEEJw/vBtFGo8Y69k7Axyjw+lo=
+			/iMjiy/LTf3t0U1b9/kiXevl+/8=
 			</data>
 			<key>hash2</key>
 			<data>
-			WitL4GTgp6b79NkxaE/F1iyWKipZipJtawMaYNaGLOo=
+			iZiSd2UHQxidXGBzPMvBNlOyWDWcepQGenwq0zUHEuA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -264,11 +282,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			rh8QO8xDV5u+ghGf8hFfB7N4eLQ=
+			whr9ZBQ/3ziSIhXH9wOT472t8WI=
 			</data>
 			<key>hash2</key>
 			<data>
-			X96qGPPrStDIyHFiw6Wilfwkh2szOmAuwgeMEGevL5I=
+			yzXkDw/25wvBdZzys8xmKJPnF3LFfmGfHeCLB92Iy5A=
 			</data>
 		</dict>
 		<key>Resources/ca.lproj/MoveApplication.strings</key>
@@ -319,6 +337,19 @@
 			<key>hash2</key>
 			<data>
 			4Ule0M+JKvLcWLQ37vq/zu4ESsocNdZkYaSqsSuyX8U=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/el.lproj/MoveApplication.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8ZzzR7JHANnt9wRfFD31FrB1EHg=
+			</data>
+			<key>hash2</key>
+			<data>
+			GtUrWCnILbSwzhvASczu/Z9vapa3TDSXeGmxr39ix3g=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -553,6 +584,19 @@
 			<key>hash2</key>
 			<data>
 			2W2kdcIlvUGtxazGMtyWsy49QhcpF2dZRZZ9sMxeHSg=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Resources/vi-VN.lproj/MoveApplication.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			EU2s2LzXXAdt999ULymXzYCONaw=
+			</data>
+			<key>hash2</key>
+			<data>
+			kRUrQM3XxOPn7FfNWOOU0ECc2KLuyJRTONtMBlIXIhw=
 			</data>
 			<key>optional</key>
 			<true/>
