@@ -6,13 +6,13 @@
 //
 
 import Cocoa
-import LetsMove
+import Sparkle
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        PFMoveToApplicationsFolderIfNecessary()
+        
     }
 
     func applicationDidBecomeActive(_ notification: Notification) {

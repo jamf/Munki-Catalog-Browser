@@ -3,35 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		639B75732872E86F00A0FAB4 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 639B75722872E86F00A0FAB4 /* Sparkle */; };
 		791EEC6020EFB4F100BD508F /* MyStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EEC5F20EFB4F100BD508F /* MyStructures.swift */; };
 		791EEC6220EFD81D00BD508F /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EEC6120EFD81D00BD508F /* AppCell.swift */; };
 		798516F21F7AB0D400EF4C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798516F11F7AB0D400EF4C1D /* AppDelegate.swift */; };
 		798516F41F7AB0D400EF4C1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798516F31F7AB0D400EF4C1D /* ViewController.swift */; };
 		798516F61F7AB0D400EF4C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798516F51F7AB0D400EF4C1D /* Assets.xcassets */; };
 		798516F91F7AB0D400EF4C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798516F71F7AB0D400EF4C1D /* Main.storyboard */; };
-		B51E89352565339A00F6B621 /* LetsMove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51E89332565339600F6B621 /* LetsMove.framework */; };
-		B51E89362565339A00F6B621 /* LetsMove.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B51E89332565339600F6B621 /* LetsMove.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B51E8939256533A900F6B621 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B51E8937256533A700F6B621 /* Sparkle.framework */; };
-		B51E893A256533A900F6B621 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B51E8937256533A700F6B621 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7C21E70123770F7A001F257D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B51E89362565339A00F6B621 /* LetsMove.framework in Embed Frameworks */,
-				B51E893A256533A900F6B621 /* Sparkle.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7C9F08592370B5E20092AAFF /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,8 +37,6 @@
 		798516F51F7AB0D400EF4C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		798516F81F7AB0D400EF4C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		798516FA1F7AB0D400EF4C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B51E89332565339600F6B621 /* LetsMove.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LetsMove.framework; sourceTree = "<group>"; };
-		B51E8937256533A700F6B621 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B51E89352565339A00F6B621 /* LetsMove.framework in Frameworks */,
-				B51E8939256533A900F6B621 /* Sparkle.framework in Frameworks */,
+				639B75732872E86F00A0FAB4 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +54,6 @@
 		798516E51F7AB0D400EF4C1D = {
 			isa = PBXGroup;
 			children = (
-				7C9F08562370B57B0092AAFF /* Frameworks */,
 				798516F01F7AB0D400EF4C1D /* Munki Catalog Browser */,
 				798516EF1F7AB0D400EF4C1D /* Products */,
 			);
@@ -100,15 +81,6 @@
 			path = "Munki Catalog Browser";
 			sourceTree = "<group>";
 		};
-		7C9F08562370B57B0092AAFF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B51E8937256533A700F6B621 /* Sparkle.framework */,
-				B51E89332565339600F6B621 /* LetsMove.framework */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,13 +93,15 @@
 				798516EC1F7AB0D400EF4C1D /* Resources */,
 				79C5D620202B6DF50071D851 /* ShellScript */,
 				7C9F08592370B5E20092AAFF /* CopyFiles */,
-				7C21E70123770F7A001F257D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Munki Catalog Browser";
+			packageProductDependencies = (
+				639B75722872E86F00A0FAB4 /* Sparkle */,
+			);
 			productName = "JSS Switcher";
 			productReference = 798516EE1F7AB0D400EF4C1D /* Munki Catalog Browser.app */;
 			productType = "com.apple.product-type.application";
@@ -167,6 +141,9 @@
 				Base,
 			);
 			mainGroup = 798516E51F7AB0D400EF4C1D;
+			packageReferences = (
+				639B75712872E86F00A0FAB4 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
 			productRefGroup = 798516EF1F7AB0D400EF4C1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,7 +315,8 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
@@ -352,12 +330,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 82K2XFN8L6;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Munki Catalog Browser/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.2.1;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dataJAR.MunkiCatalogBrowser;
@@ -376,12 +354,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 82K2XFN8L6;
 				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
+				FRAMEWORK_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "Munki Catalog Browser/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dataJAR.MunkiCatalogBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		639B75712872E86F00A0FAB4 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		639B75722872E86F00A0FAB4 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 639B75712872E86F00A0FAB4 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 798516E61F7AB0D400EF4C1D /* Project object */;
 }
