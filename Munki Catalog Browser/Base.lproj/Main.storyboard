@@ -29,6 +29,12 @@
                                                 <action selector="checkForUpdates:" target="Pyf-5N-Puf" id="ily-9Q-r6m"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Check for Beta Updates" id="Jj8-ty-dQD">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="checkForUpdates:" target="S4o-fe-ihg" id="NJw-jU-8CI"/>
+                                            </connections>
+                                        </menuItem>
                                         <menuItem isSeparatorItem="YES" id="wFC-TO-SCJ"/>
                                         <menuItem title="Services" id="NMo-om-nkz">
                                             <modifierMask key="keyEquivalentModifierMask"/>
@@ -129,6 +135,11 @@
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Munki_Catalog_Browser" customModuleProvider="target"/>
                 <customObject id="Pyf-5N-Puf" customClass="SUUpdater"/>
+                <customObject id="S4o-fe-ihg" customClass="SPUStandardUpdaterController">
+                    <connections>
+                        <outlet property="updaterDelegate" destination="Voe-Tx-rLC" id="veZ-vK-XqR"/>
+                    </connections>
+                </customObject>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
