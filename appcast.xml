@@ -33,6 +33,8 @@
             sparkle:edSignature="4gp3m2aN9oOoKx++xq1BkKOF2bJEm8VPSzEJShGhjxrBmIH8FmoqKknJdYcQLq1m46yS9a+nKCq23wA1p2y5Bw==" />
             <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
         </item>
+    </channel>
+    <channel>
         <item>
             <title>Version 2.0 (Beta 1)</title>
             <sparkle:channel>beta</sparkle:channel>
