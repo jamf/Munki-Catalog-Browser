@@ -41,7 +41,7 @@
             <sparkle:version>0.01</sparkle:version>
             <sparkle:shortVersionString>0.0b1</sparkle:shortVersionString>
             <description><![CDATA[
-                <h2>1.2.1 (build 69) BETA</h2>
+                <h2>1.2.2b (build 70) BETA</h2>
                 <li><a href="https://github.com/dataJAR//Munki-Catalog-Browser/issues/9" class="issue-link">#9</a> - Silicon support, from updating LetsMove.framework to 1.25 and Sparkle.framework to 1.24.0.</li>
                 </br>
                 <h2>1.2 (build 67)</h2>
@@ -60,7 +60,7 @@
             </description>
             <pubDate>Friday, 08 July 2022 15:25 +0000</pubDate>
             <enclosure url="https://github.com/dataJAR/Munki-Catalog-Browser/releases/download/1.2.1/Munki.Catalog.Browser.zip"
-            sparkle:version="69"
+            sparkle:version="70"
             length="6697951"
             type="application/octet-stream"
             sparkle:edSignature="4gp3m2aN9oOoKx++xq1BkKOF2bJEm8VPSzEJShGhjxrBmIH8FmoqKknJdYcQLq1m46yS9a+nKCq23wA1p2y5Bw==" />
