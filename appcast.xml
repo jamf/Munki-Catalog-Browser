@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
-        <title>Munki Catalog Browsers Changelog</title>
-        <link>https://raw.githubusercontent.com/dataJAR/Munki-Catalog-Browser/appcast/appcast.xml</link>
-        <description>Most recent changes with links to updates.</description>
-        <language>en</language>
-        <item>
-        <title>Version 1.2.1</title>
-        <description><![CDATA[
-            <h2>1.2.1 (build 69)</h2>
-            <li><a href="https://github.com/dataJAR//Munki-Catalog-Browser/issues/9" class="issue-link">#9</a> - Silicon support, from updating LetsMove.framework to 1.25 and Sparkle.framework to 1.24.0.</li>
-            </br>
-            <h2>1.2 (build 67)</h2>
-            <li><a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/10" class="issue-link">#10</a> - Pressing CMD+C when a row is highlighted copies the Munki Name column value for that row</li>
-            <li><a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/11" class="issue-link">#11</a>Leading spaces no longer present in the CSV output</li>
-            <li><a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/12" class="issue-link">#12</a> CSV output now appended with date and time, for example: Munki Catalog Browser Export - 2020-10-12-03-40-23.csv</li>
-            </br>
-            <li>This release has also been tested under Big Sur b9, with no issues found.</li>
-            <h2>1.1 (build 56)</h2>
-            <li>Entering text in search field causes app to crash - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/1" class="issue-link">#1</a></li>
-            <li>Main window sizing is unpredictable and not easily modifiable - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/3" class="issue-link">#3</a></li>
-            <li>App not usable by non-admin users due to default catalog permissions - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/4" class="issue-link">#4</a></li>
-            <li>Search bar does not span whole window - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/5" class="issue-link">#5</a></li
-            <h2>1.0 (build 40)</h2>
-            <h2>Release!</h2>]]>
-            </description>
-            <pubDate>Wednesday, 18 November 2020 11:00 +0000</pubDate>
-            <enclosure url="https://github.com/dataJAR/Munki-Catalog-Browser/releases/download/1.2.1/Munki.Catalog.Browser.zip"
-            sparkle:version="69"
-            length="6697951" 
-            type="application/octet-stream" 
-            sparkle:edSignature="4gp3m2aN9oOoKx++xq1BkKOF2bJEm8VPSzEJShGhjxrBmIH8FmoqKknJdYcQLq1m46yS9a+nKCq23wA1p2y5Bw==" />
-            <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>
-        </item>
+<!--        <title>Munki Catalog Browsers Changelog</title>-->
+<!--        <link>https://raw.githubusercontent.com/dataJAR/Munki-Catalog-Browser/appcast/appcast.xml</link>-->
+<!--        <description>Most recent changes with links to updates.</description>-->
+<!--        <language>en</language>-->
+<!--        <item>-->
+<!--        <title>Version 1.2.1</title>-->
+<!--        <description><![CDATA[-->
+<!--            <h2>1.2.1 (build 69)</h2>-->
+<!--            <li><a href="https://github.com/dataJAR//Munki-Catalog-Browser/issues/9" class="issue-link">#9</a> - Silicon support, from updating LetsMove.framework to 1.25 and Sparkle.framework to 1.24.0.</li>-->
+<!--            </br>-->
+<!--            <h2>1.2 (build 67)</h2>-->
+<!--            <li><a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/10" class="issue-link">#10</a> - Pressing CMD+C when a row is highlighted copies the Munki Name column value for that row</li>-->
+<!--            <li><a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/11" class="issue-link">#11</a>Leading spaces no longer present in the CSV output</li>-->
+<!--            <li><a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/12" class="issue-link">#12</a> CSV output now appended with date and time, for example: Munki Catalog Browser Export - 2020-10-12-03-40-23.csv</li>-->
+<!--            </br>-->
+<!--            <li>This release has also been tested under Big Sur b9, with no issues found.</li>-->
+<!--            <h2>1.1 (build 56)</h2>-->
+<!--            <li>Entering text in search field causes app to crash - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/1" class="issue-link">#1</a></li>-->
+<!--            <li>Main window sizing is unpredictable and not easily modifiable - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/3" class="issue-link">#3</a></li>-->
+<!--            <li>App not usable by non-admin users due to default catalog permissions - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/4" class="issue-link">#4</a></li>-->
+<!--            <li>Search bar does not span whole window - <a href="https://github.com/dataJAR/Munki-Catalog-Browser/issues/5" class="issue-link">#5</a></li-->
+<!--            <h2>1.0 (build 40)</h2>-->
+<!--            <h2>Release!</h2>]]>-->
+<!--            </description>-->
+<!--            <pubDate>Wednesday, 18 November 2020 11:00 +0000</pubDate>-->
+<!--            <enclosure url="https://github.com/dataJAR/Munki-Catalog-Browser/releases/download/1.2.1/Munki.Catalog.Browser.zip"-->
+<!--            sparkle:version="69"-->
+<!--            length="6697951" -->
+<!--            type="application/octet-stream" -->
+<!--            sparkle:edSignature="4gp3m2aN9oOoKx++xq1BkKOF2bJEm8VPSzEJShGhjxrBmIH8FmoqKknJdYcQLq1m46yS9a+nKCq23wA1p2y5Bw==" />-->
+<!--            <sparkle:minimumSystemVersion>10.12</sparkle:minimumSystemVersion>-->
+<!--        </item>-->
     </channel>
     <channel>
         <item>
@@ -41,7 +41,7 @@
             <sparkle:version>0.01</sparkle:version>
             <sparkle:shortVersionString>0.0b1</sparkle:shortVersionString>
             <description><![CDATA[
-                <h2>1.2.1 (build 69)</h2>
+                <h2>1.2.1 (build 69) BETA</h2>
                 <li><a href="https://github.com/dataJAR//Munki-Catalog-Browser/issues/9" class="issue-link">#9</a> - Silicon support, from updating LetsMove.framework to 1.25 and Sparkle.framework to 1.24.0.</li>
                 </br>
                 <h2>1.2 (build 67)</h2>
