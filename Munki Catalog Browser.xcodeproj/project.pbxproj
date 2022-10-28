@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		639B75732872E86F00A0FAB4 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = 639B75722872E86F00A0FAB4 /* Sparkle */; };
 		791EEC6020EFB4F100BD508F /* MyStructures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EEC5F20EFB4F100BD508F /* MyStructures.swift */; };
 		791EEC6220EFD81D00BD508F /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791EEC6120EFD81D00BD508F /* AppCell.swift */; };
 		798516F21F7AB0D400EF4C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798516F11F7AB0D400EF4C1D /* AppDelegate.swift */; };
 		798516F41F7AB0D400EF4C1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 798516F31F7AB0D400EF4C1D /* ViewController.swift */; };
 		798516F61F7AB0D400EF4C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 798516F51F7AB0D400EF4C1D /* Assets.xcassets */; };
 		798516F91F7AB0D400EF4C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 798516F71F7AB0D400EF4C1D /* Main.storyboard */; };
+		B516E911290C077100B01012 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = B516E910290C077100B01012 /* Sparkle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,7 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				639B75732872E86F00A0FAB4 /* Sparkle in Frameworks */,
+				B516E911290C077100B01012 /* Sparkle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +100,7 @@
 			);
 			name = "Munki Catalog Browser";
 			packageProductDependencies = (
-				639B75722872E86F00A0FAB4 /* Sparkle */,
+				B516E910290C077100B01012 /* Sparkle */,
 			);
 			productName = "JSS Switcher";
 			productReference = 798516EE1F7AB0D400EF4C1D /* Munki Catalog Browser.app */;
@@ -113,7 +113,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1400;
 				ORGANIZATIONNAME = dataJAR;
 				TargetAttributes = {
 					798516ED1F7AB0D400EF4C1D = {
@@ -142,7 +142,7 @@
 			);
 			mainGroup = 798516E51F7AB0D400EF4C1D;
 			packageReferences = (
-				639B75712872E86F00A0FAB4 /* XCRemoteSwiftPackageReference "Sparkle" */,
+				B516E90F290C077100B01012 /* XCRemoteSwiftPackageReference "Sparkle" */,
 			);
 			productRefGroup = 798516EF1F7AB0D400EF4C1D /* Products */;
 			projectDirPath = "";
@@ -241,6 +241,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -258,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -301,6 +302,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -312,7 +314,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -328,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 82K2XFN8L6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -336,7 +339,8 @@
 					"$(inherited)",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.3;
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dataJAR.MunkiCatalogBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -352,6 +356,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 82K2XFN8L6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -360,7 +365,8 @@
 					"$(inherited)",
 					"@loader_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2.1;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.dataJAR.MunkiCatalogBrowser;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -391,20 +397,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		639B75712872E86F00A0FAB4 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+		B516E90F290C077100B01012 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/sparkle-project/Sparkle.git";
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.3.0;
+				branch = 2.x;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		639B75722872E86F00A0FAB4 /* Sparkle */ = {
+		B516E910290C077100B01012 /* Sparkle */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 639B75712872E86F00A0FAB4 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			package = B516E90F290C077100B01012 /* XCRemoteSwiftPackageReference "Sparkle" */;
 			productName = Sparkle;
 		};
 /* End XCSwiftPackageProductDependency section */
