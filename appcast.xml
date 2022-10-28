@@ -38,6 +38,8 @@
         <item>
             <title>Version 2.0 (Beta 1)</title>
             <sparkle:channel>beta</sparkle:channel>
+            <sparkle:version>90</sparkle:version>
+            <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
             <description><![CDATA[
                 <h2>1.3b (build 90) BETA</h2>
                 <li>Changes in this release:</li>
