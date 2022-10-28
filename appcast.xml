@@ -37,11 +37,10 @@
     <channel>
         <item>
             <sparkle:channel>beta</sparkle:channel>
-            <sparkle:version>91</sparkle:version>
-            <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
-             <title>Version 1.3-beta1</title>
+            <sparkle:version>93</sparkle:version>
+            <title>Version 1.3-beta1</title>
             <description><![CDATA[
-                <h2>1.3-beta1 (build 90)</h2>
+                <h2>1.3-beta1 (build 93)</h2>
                 <p>Changes in this release:</p>
                 <li>Removed the LetsMove framework (to stop the SystemPolicyAppBundle protection being triggered on macOS 13.0+)</li>
                 <li>Updated Sparkle to Sparkle 2</li>
@@ -65,9 +64,9 @@
             </description>
             <pubDate>Friday, 28 October 2022 13:00 +0000</pubDate>
             <enclosure url="https://github.com/dataJAR/Munki-Catalog-Browser/releases/download/1.3-beta1/Munki.Catalog.Browser.zip"
-            length="5627431"
+            length="5103746"
             type="application/octet-stream"
-            sparkle:edSignature="1YC1GUAXMy6W0OJHs4Hvyg/GjBYl3yHRZb6nsT2JbB8+DKgIxD9eRxjuaXa5S/2fjceiSDdIUDB6cZDBiuZhDw==" />
+            sparkle:edSignature="1YesYf8ly+/ZP0DcOEDM/HSrisO50I+5dWWep76pvrvv1hGZv5WiPj+IXUM9OW0EkohTL2QjdD7ck+4S8DX5Bg==" />
             <sparkle:minimumSystemVersion>10.13</sparkle:minimumSystemVersion>
         </item>
     </channel>
