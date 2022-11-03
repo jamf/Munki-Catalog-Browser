@@ -6,6 +6,7 @@
 //
 
 import Cocoa
+import Sparkle
 
 class ViewController: NSViewController {
 
@@ -19,6 +20,7 @@ class ViewController: NSViewController {
     }
 
     let appDelegate = NSApplication.shared.delegate as! AppDelegate
+    
 
     @IBAction func refresh(_ sender: Any) {
         filteredAppsFound = [MunkiApp]()
