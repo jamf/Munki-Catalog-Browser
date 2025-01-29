@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: datajar
+  annotations:
+    sonarqube.org/project-key: com.jamf.team-red-dawg:Munki-Catalog-Browser
+spec:
+  type: service
+  owner: datajar
+  lifecycle: experimental
+  system: datajar
