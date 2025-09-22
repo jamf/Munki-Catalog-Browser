@@ -1,11 +1,17 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: datajar
   annotations:
     sonarqube.org/project-key: com.jamf.team-red-dawg:Munki-Catalog-Browser
+  description: Munki Catalog Browser is an app which allows a local macOS admin to easily list items in your devices Munki catalogs as well as exporting to CSV.
+  name: munki-catalog-browser
+  tags:
+    - datajar
+    - autoupdate
+    - swift
 spec:
-  type: service
-  owner: datajar
-  lifecycle: experimental
-  system: datajar
+  type: application
+  lifecycle: production
+  owner: zubry
+  system: jamf-auto-update
+  serviceTier: 5
