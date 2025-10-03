@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="24128"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -67,11 +67,11 @@
                                     </items>
                                 </menu>
                             </menuItem>
-                            <menuItem title="Edit" enabled="NO" id="meE-uL-s41">
+                            <menuItem title="Edit" id="meE-uL-s41">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Edit" id="sag-4Z-ezG">
                                     <items>
-                                        <menuItem title="Undo" enabled="NO" keyEquivalent="z" id="Neq-vh-ExB">
+                                        <menuItem title="Undo" keyEquivalent="z" id="Neq-vh-ExB">
                                             <connections>
                                                 <action selector="undo:" target="Ady-hI-5gd" id="DaM-nJ-pv5"/>
                                             </connections>
@@ -82,7 +82,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="Dfp-Ir-LmC"/>
-                                        <menuItem title="Copy" enabled="NO" keyEquivalent="c" id="HM7-4O-XBR">
+                                        <menuItem title="Copy" keyEquivalent="c" id="HM7-4O-XBR">
                                             <connections>
                                                 <action selector="copy:" target="Ady-hI-5gd" id="CPo-kN-zTf"/>
                                             </connections>
@@ -172,7 +172,7 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Munki_Catalog_Browser" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="873" height="556"/>
+                        <rect key="frame" x="0.0" y="0.0" width="873" height="558"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6XQ-N4-yL2">
@@ -212,7 +212,7 @@
                                                                     </constraints>
                                                                     <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="tgo-cX-Twc"/>
                                                                 </imageView>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-UH-LnY">
+                                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Xce-UH-LnY">
                                                                     <rect key="frame" x="48" y="0.0" width="37" height="17"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="17" id="w7d-PH-rLk"/>
@@ -223,7 +223,7 @@
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                 </textField>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ibq-0j-HM5">
+                                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ibq-0j-HM5">
                                                                     <rect key="frame" x="358" y="1" width="37" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="WUe-dw-ogo">
                                                                         <font key="font" metaFont="system"/>
@@ -231,7 +231,7 @@
                                                                         <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                 </textField>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uya-WV-tsz">
+                                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uya-WV-tsz">
                                                                     <rect key="frame" x="618" y="1" width="37" height="16"/>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="zQ5-hV-TNL">
                                                                         <font key="font" metaFont="system"/>
@@ -239,7 +239,7 @@
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                 </textField>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EMh-Y9-L5P">
+                                                                <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EMh-Y9-L5P">
                                                                     <rect key="frame" x="748" y="1" width="37" height="16"/>
                                                                     <textFieldCell key="cell" lineBreakMode="clipping" title="Label" id="mi5-Uu-iNC">
                                                                         <font key="font" metaFont="system"/>
@@ -287,8 +287,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <searchField wantsLayer="YES" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKJ-6e-LVR">
-                                <rect key="frame" x="0.0" y="534" width="873" height="22"/>
+                            <searchField wantsLayer="YES" focusRingType="none" verticalHuggingPriority="750" textCompletion="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BKJ-6e-LVR">
+                                <rect key="frame" x="0.0" y="534" width="873" height="24"/>
                                 <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" alignment="left" usesSingleLineMode="YES" bezelStyle="round" id="AsU-bG-gGk">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
