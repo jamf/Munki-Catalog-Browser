@@ -46,7 +46,7 @@
             <description><![CDATA[
                 <h2>1.4.1 (build 97)</h2>
                 <p>Changes in this release:</p>
-                <li>Resolves an issue where the copy function did not work on macOS Tahoe. (This was release 1.4, but had to be bumped to 1.4.1 due to the rotating Sparkle keys)./li>
+                <li>Resolves an issue where the copy function did not work on macOS Tahoe. (This was release 1.4, but had to be bumped to 1.4.1 due to the rotating Sparkle keys).</li>
                 <li>Rotated signing keys/</li>
                 <li>Resized the app icon</li>
                 <h2>1.3 (build 93)</h2>
